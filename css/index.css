@@ -1,0 +1,119 @@
+.membership-jumbotron{
+  text-align: center;
+  margin-top: 59px;
+}
+
+.benefits-int{
+  text-align: center;
+  margin-top: 59px;
+  color: #000000;
+}
+
+.down-arrow{
+  margin-bottom: 0px;
+}
+
+.benefits{
+  background: #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  text-align: center;;
+  margin-right: 100px
+}
+
+.membership-tab{
+  margin-top: 30px;
+}
+
+.membership-tab > .row > .benefits{
+  color: #FBFEF9;
+}
+
+.membership-tab > .row > .benefits:hover{
+  color: #3a3a3a;
+  background: #E3E3E3;
+}
+
+.membership-tab > .row > .selected{
+  color: #3a3a3a;
+  background: #E3E3E3;
+}
+
+.cat-style{
+   font-size: 16px;
+   font-family: inherit;
+   font-weight: bold;
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.benefits-category-cont{
+  padding: 20px;
+  border: 2px solid #d3d3d3;
+  border-radius: 10px;
+  background: #E3E3E3;
+}
+
+#cont-ben{
+  margin-top: 20px;
+}
+
+.event-img{
+  width: 100%;
+}
+
+.event-cont{
+  margin-top: 50px;
+}
+
+.image-cont{
+  padding: 20px;
+}
+
+.image{
+  border: 2px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.hover-cont{
+  position: absolute;;
+  left: 31px;
+  top: 27px;
+  width: 82%;
+  text-align: center;
+}
+
+.seemore-btn{
+  background: #3498db;
+  color: #fff;
+  border: 0px;
+  border-radius: 20px;
+}
+
+#event-det-cont > div > div > div > h2{
+  color: #3498db;
+  font-weight: bold;
+}
+#event-det-cont > div > div > .title-event {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.details{
+  color: #000;
+  font-size: 18px;
+}
+
+
+#event-det-cont {
+  margin-bottom: 30px;
+}
+
+.image > div > h4 {
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,133 @@
+// Variables
+$main-font-family: 'Lato', sans-serif;
+$headings-font-family: 'Raleway', sans-serif;
+$sub-headings-font-family: 'Righteous', cursive;
+$main-color: #3498db;
+/* Basic Styles */
+body {
+    color: #fff;
+    font-family: $main-font-family;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+    font-family: $headings-font-family;
+}
+/* Header */
+header {
+    background-image: linear-gradient(rgba(2, 2, 2, 0.75), rgba(2, 2, 2, 0.75)), url("../img/Intro.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    margin: 5rem;
+
+    .navbar-brand {
+        cursor: pointer;
+        font-weight: bold;
+        font-family: Rubik;
+        font-size: 4em;
+
+        span {
+            color: #fff;
+            line-height: 1.5;
+            font-size: 0.35em;
+            font-weight: lighter;
+        }
+    }
+
+    ul {
+        &.navbar-nav {
+            float: right !important;
+        }
+    }
+
+    li {
+        color: $main-color;
+        text-transform: capitalize;
+        font-size: 1.4em;
+    }
+
+    a {
+        color: $main-color;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.jumbotron {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 1140px;
+
+    h1 {
+        text-transform: capitalize;
+        margin-bottom: 0;
+        font-family: Rubik;
+        font-weight: bolder;
+    }
+
+    .lead {
+        color: $main-color;
+        font-size: 2.5em;
+        font-family: $sub-headings-font-family;
+    }
+}
+/* Testemonials */
+#testemonials {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+
+    h1 {
+        color: $main-color;
+        font-size: 3em;
+        margin-bottom: 2em;
+    }
+
+    img {
+        border-radius: 50%;
+        padding-bottom: 1.5em;
+        margin-left: 50%;
+    }
+
+    .lead {
+        color: #888;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+#articles {
+    margin-top: 10rem;
+    text-align: center;
+
+    h1 {
+        color: $main-color;
+        font-size: 3em;
+        margin-bottom: 2em;
+    }
+}
+
+
+.footer-distributed {
+  h3 {
+    font-family: $sub-headings-font-family !important;
+  }
+  & .footer-links a:hover {
+    color: $main-color;
+    transition: 0.3s ease-in-out;
+  }
+  & .footer-icons a:hover {
+    color: $main-color;
+    transition: 0.3s ease-in-out;
+  }
+}

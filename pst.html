@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>IEEE</title>
+    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css" />
+    <link rel="stylesheet" href="bower_components/fakeLoader/fakeLoader.css">
+    <link rel="icon" type="image/x-icon" href="img/icon1.ico">
+    <link rel="icon" type="image/png" href="img/icon.png" sizes="16x16">
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style type="text/css">
+        #main {
+            background-color: aliceblue;
+            padding: 10px 20px 10px 5px;
+            border-radius: 20px;
+        }
+
+        #demo {
+            text-align: center;
+            font-size: 60px;
+            color: #333333;
+        }
+
+        h1 {
+            font-size: 200%;
+            color: black;
+        }
+
+        h4 {
+            color: darkslategray;
+        }
+
+        h2 {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+    <script>
+        var countdown = 30 * 60 * 1000;
+        var timerId = setInterval(function () {
+            countdown -= 1000;
+            var min = Math.floor(countdown / (60 * 1000));
+            //var sec = Math.floor(countdown - (min * 60 * 1000));  // wrong
+            var sec = Math.floor((countdown - (min * 60 * 1000)) / 1000);  //correct
+            document.getElementById("demo").innerHTML = min + "m " + sec + "s ";
+            if (countdown <= 0) {
+                document.getElementById("demo").innerHTML = "EXPIRED";
+                alert("30 min!");
+                clearInterval(timerId);
+                window.location.href = "http://ieee-asusb.tk/career.html";
+                //doSomething();
+            } else {
+                $("#countTime").html(min + " : " + sec);
+            }
+
+        }, 1000); //1000ms. = 1sec.
+    </script>
+
+    <div id="fakeLoader"></div>
+
+    <section id="event-det-cont" class="container">
+
+
+        <div class="col-sm-1"></div>
+
+
+
+        <div class="col-sm-1"></div>
+        </div>
+        <h1 align="center">PST</h1>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <form action="../result.php" method="post" name="forms">
+                <div class=" form-group">
+
+                        <input type="text" class="form-control" name="mobile" placeholder="Enter your Mobile Number :" >
+                   </div><hr><hr>
+
+                    <h4>Look carefully at the sequence of symbols to find the pattern. Select correct pattern</h4>
+                    <img src="images/1.png" />
+                    <p class="par">
+                        <select name="iq1" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100" id="select1" autofocusrequired>
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select><br/>
+                    </p>
+                    <h4>Choose the picture that would go in the empty box so that the two bottom pictures are related in the
+                        same way as the top two are related</h4>
+                    <img src="images/2.png" />
+                    <p class="par">
+                        <select name="iq2" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select><br/>
+                    </p>
+                    <h4>Choose the picture that would go in the empty box so that the two bottom pictures are related in the
+                        same way as the top two are related</h4>
+                    <img src="images/3.png" />
+                    <p class="par">
+                        <select name="iq3" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select><br/>
+                    </p>
+
+                    <h4>The words in the bottom row are related in the same way as the words in the top row. For each item, find
+                        the word that completes the bottom row of words</h4>
+                    <table border="1px;solid" style="margin-bottom: 10px;">
+                        <tr>
+                            <td style="color: #333333;padding: 10px;">
+                                Apples
+                            </td>
+                            <td style="color: #333333;padding: 10px;">
+                                fruit
+                            </td>
+                            <td style="color: #333333;padding: 10px;">
+                                supermarket
+                            </td>
+                            <td style="color: #333333;padding: 10px;">
+                                Novel
+                            </td>
+                            <td style="color: #333333;padding: 10px;">
+                                book
+                            </td>
+                            <td style="color: #333333;padding: 10px;">
+                                ?
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="par">
+                        <select name="iq4" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="bookstore">bookstore</option>
+                            <option value="magazine">magazine</option>
+                            <option value="vegetable">vegetable</option>
+                            <option value="shop">shop</option>
+                        </select><br/>
+                    </p>
+                    <h4>Three of the words will be in the same classification, the remaining one will not be. Your answer will
+                        be the one word that does NOT belong in the same classification as the others</h4>
+                    <p class="par">
+                        <select name="iq5" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="branch">branch</option>
+                            <option value="dirt">dirt</option>
+                            <option value="leaf">leaf</option>
+                            <option value="root">root</option>
+                        </select><br/>
+                    </p>
+
+                    <h4>Choose the picture that would go in the empty box so that the two bottom pictures are related in the
+                        same way as the top two are related</h4>
+                    <img src="images/6.png" />
+                    <p class="par">
+                        <select name="iq6" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select><br/>
+                    </p>
+
+                    <h4>Look carefully at the sequence of symbols to find the pattern. Select correct pattern</h4>
+                    <img src="images/7.png" />
+                    <p class="par">
+                        <select name="iq7" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select><br/>
+                    </p>
+                    <h4>Choose the picture that would go in the empty box so that the two bottom pictures are related in the
+                        same way as the top two are related</h4>
+                    <img src="images/8.png" />
+                    <p class="par">
+                        <select name="iq8" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select><br/>
+                    </p>
+                    <h4>How long is an IPv6 address?</h4>
+                    <p class="par">
+                        <select name="network1" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="32 bits">32 bits</option>
+                            <option value="128 bytes">128 bytes</option>
+                            <option value="64 bits">64 bits</option>
+                            <option value="128 bits">128 bits</option>
+                        </select><br/>
+                    </p>
+                    <h4>Frames from one LAN can be transmitted to another LAN via the device</h4>
+                    <p class="par">
+                        <select name="network2" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="Router">Router</option>
+                            <option value="Bridge">Bridge</option>
+                            <option value="Repeater">Repeater</option>
+                            <option value="Modem">Modem</option>
+                        </select><br/>
+                    </p>
+
+                    <h4>Which of the following is the decimal and hexadecimal equivalents of the binary number 10011101?</h4>
+                    <p class="par">
+                        <select name="network3" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="155, 0x9B">155, 0x9B</option>
+                            <option value="157, 0x9D">157, 0x9D</option>
+                            <option value="159, 0x9F">159, 0x9F</option>
+                            <option value="185, 0xB9">185, 0xB9</option>
+                        </select><br/>
+                    </p>
+
+                    <h4>Which of the following is a voice band channel?</h4>
+                    <p class="par">
+                        <select name="network4" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="Telephone line">Telephone line</option>
+                            <option value="Telegraph line">Telegraph line</option>
+                            <option value="Coaxial cable">Coaxial cable</option>
+                            <option value="Microwave systems">Microwave systems</option>
+                            <option value="None of the above">None of the above</option>
+                        </select><br/>
+                    </p>
+
+                    <h4>A central computer surrounded by one or more satellite computers is called a</h4>
+                    <p class="par">
+                        <select name="network5" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="bus network">bus network</option>
+                            <option value="ring network">ring network</option>
+                            <option value="star network">star network</option>
+                            <option value="All of the above">All of the above</option>
+                            <option value="None of the above">None of the above</option>
+                        </select><br/>
+                    </p>
+                    <h4>Communication between computers is almost always</h4>
+                    <p class="par">
+                        <select name="network6" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="serial">serial</option>
+                            <option value="parallel">parallel</option>
+                            <option value="series parallel">series parallel</option>
+                            <option value="direct">direct</option>
+                            <option value="None of the above">None of the above</option>
+                        </select><br/>
+                    </p>
+
+                    <h4>MAC is</h4>
+                    <p class="par">
+                        <select name="network7" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="a method of determining which device has access to the transmission medium at any time">a method of determining which device has access to the transmission medium at any time</option>
+                            <option value="a method access control technique or multiple-access transmission media">a method access control technique or multiple-access transmission media</option>
+                            <option value="a very common bit-oriented data link protocol issued to ISO">a very common bit-oriented data link protocol issued to ISO</option>
+                            <option value="network access standard for connecting stations to a circuit-switched network">network access standard for connecting stations to a circuit-switched network</option>
+                            <option value="None of the above">None of the above</option>
+                        </select><br/>
+                    </p>
+
+                    <h4>A communication network which is used by large organizations over regional, national or global area is
+                        called
+                    </h4>
+                    <p class="par">
+                        <select name="network8" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="LAN">LAN</option>
+                            <option value="WAN">WAN</option>
+                            <option value="MAN">MAN</option>
+                            <option value="Intranet">Intranet</option>
+                            <option value="None of the above">None of the above</option>
+                        </select><br/>
+                    </p>
+
+                    <h4>What does 192 translate to in binary?</h4>
+                    <p class="par">
+                        <select name="network9" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="11000000">11000000</option>
+                            <option value="00111110">00111110</option>
+                            <option value="00001111">00001111</option>
+                            <option value="00000011">00000011</option>
+                            <option value="None of the above">None of the above</option>
+                        </select><br/>
+                    </p>
+
+                    <h4>The loss in signal power as light travels down the fiber is called</h4>
+                    <p class="par">
+                        <select name="network10" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="attenuation">attenuation</option>
+                            <option value="propagation">propagation</option>
+                            <option value="Scattering">Scattering</option>
+                            <option value="interruption">interruption</option>
+                            <option value="None of the above">None of the above</option>
+                        </select><br/>
+                    </p>
+
+                    <h4>Operating system functions may include</h4>
+                    <p class="par">
+                        <select name="network11" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                           <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="input/output control">input/output control</option>
+                            <option value="virtual storage">virtual storage</option>
+                            <option value="multiprogramming">multiprogramming</option>
+                            <option value="All of the above">All of the above</option>
+                            <option value="None of the above">None of the above</option>
+                        </select><br/>
+                    </p>
+
+                    <h4>What will be the output of the program ?</h4>
+                    <h3 style="color: #333333">
+                        int main()<br> {
+                        <br> char str1[20] = "Hello", str2[20] = " World";<br> printf("%s\n", strcpy(str2, strcat(str1, str2)));<br>                        return 0;<br> }
+                    </h3>
+                    <p class="par">
+                        <select name="programming1" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+
+                            <option value="Hello">Hello</option>
+                            <option value="World">World</option>
+                            <option value="Hello World">Hello World</option>
+                            <option value="WorldHello">WorldHello</option>
+                        </select><br/>
+                    </p>
+
+                    <h4>What will be the output of the program ?</h4>
+                    <h3 style="color: #333333">
+                        int main()<br> {
+                        <br> printf("%d\n", strlen("123456"));<br> return 0;<br> }
+                    </h3>
+                    <p class="par">
+                        <select name="programming2" class="form-control wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="100">
+                            <option disabled="disabled" selected="selected">Please Choose Your Answer</option>
+                            <option value="6">6</option>
+                            <option value="12">12</option>
+                            <option value="7">7</option>
+                            <option value="2">2</option>
+                        </select><br/>
+                    </p>
+
+                    <p align="center">
+                        <input type="submit" value="Submit" class="btn btn-success wow bounceInRight" data-wow-duration="1.5s" data-wow-offset="40"
+                            data-wow-delay=".25s">
+                    </p>
+
+
+                </form>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        </div>
+
+    </section>
+    <footer id="cu" class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>IEEE|<span>ASU SB</span></h3>
+
+            <p class="footer-links">
+                <a href="index.html">Home</a> ·
+                <a href="membership.html">Membership</a> ·
+                <a href="events.html">Events</a> ·
+                <a href="about-us.html">About</a>
+            </p>
+
+            <p class="footer-company-name">All rights reserved © 2017 IEEE|ASU SB</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Faculty of engineering - Abdo basha<span> Cairo, Egypt</span></p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+201120023329</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p>ieee.asu.sb.2009@gmail.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About IEEE ASU SB</span> Established in 2009 at the faculty of engineering Ain Shams University. Since
+                then, IEEE ASU SB has taken the commitment to spread technological awareness and improve both technical &
+                non technical skills of students.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/ieeeasueg"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/IEEE_ASU_SB"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ieeeasueg/"><i class="fa fa-instagram"></i></a>
+                <a href="https://plus.google.com/106963750167734551831"><i class="fa fa-google"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Slick Slider -->
+<script type="text/javascript" src="slick-1.6.0/slick/slick.js"></script>
+<!-- Fake Loader -->
+<script type="text/javascript" src="bower_components/fakeLoader/fakeLoader.min.js"></script>
+<!-- Main core JavaScript -->
+<script type="text/javascript" src="js/events.js"></script>
+
+</html>
